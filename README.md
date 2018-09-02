@@ -11,7 +11,7 @@ For details of the method, see the paper:
 * `DFIB_SpreadInterp3D_MEX/`: DFIB spreading and interpolation operators in 3D.
 * `DFIBsolver2D/`: contains codes for solving IB equations in 2D.
 * `DFIBsolver3D/`: contains codes for solving IB equations in 3D. 
-* `Kernels_MEX/`: contains MEX codes for computing IB kernel weights for spreading/interpolation.
+* `Kernels_MEX/`: contains MEX C codes for spreading/interpolating various IB kernels (Peskin kernels).
 * `EXAMPLES/`: contains _main_ programs for demos. 
 
 ## Instructions
