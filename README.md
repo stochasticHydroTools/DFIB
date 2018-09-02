@@ -17,16 +17,16 @@ For details of the method, see the paper:
 ## Instructions
 * Before running any tests in `EXAMPLES/`, first build the MEX files. In MATLAB command line, type:
 
-`cd Kernels_MEX`
-
-`mex KernelGrid2D.c Kernels.c`
-
-`mex KernelGrid3D.c Kernels.c`
-
+```
+cd Kernels_MEX
+mex KernelGrid2D.c Kernels.c
+mex KernelGrid3D.c Kernels.c
+```
 * To run the 3D surface tension test, you also need to build the MEX files:
 
-`cd EXAMPLES`
+```
+cd EXAMPLES
+mex ForceSurfTension.c
+mex TetrahedronSphereVolume.c
+```
 
-`mex ForceSurfTension.c`
-
-`mex TetrahedronSphereVolume.c`
