@@ -28,9 +28,6 @@ w2=(-rho/dt)*u(:,:,2)+rho*S(:,:,2)-mu/2*Laplacian2D(u(:,:,2),N,h)-f(:,:,2);
 Divw = (w1([2:Nx,1],:)-w1)/h + (w2(:,[2:Ny,1])-w2)/h;
 pp = PoissonSolver2D(Divw,L_hat2);
 
-figure(99); clf;
-pcolor(pp);
-
 % solve for velocity u(n+1)
 r1 = u(:,:,1) - dt*S(:,:,1) + c2*Laplacian2D(u(:,:,1),N,h) + ...
      c1*f(:,:,1) - c1*(pp-pp([Nx,1:Nx-1],:))/h;
